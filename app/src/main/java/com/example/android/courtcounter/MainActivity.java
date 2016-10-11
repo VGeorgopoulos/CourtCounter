@@ -15,6 +15,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void resetScores(View view) {
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
+    }
 
     /**
      * Displays the given score for Team A.
@@ -38,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamA += 1;
         displayForTeamA(scoreTeamA);
     }
-
 
 
     /**
